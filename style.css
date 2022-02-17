@@ -1,0 +1,38 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header-area {
+	padding: 40px;
+}
+.money-title {
+	text-align: center;
+}
+.money-title h1 {
+	color: #31A5AC;
+	font-size: 48px;
+	font-weight: 700;
+	padding-bottom: 38px;
+}
+.money-image img {
+	width: 100%;
+}
+.money-content {
+	background-color: #F8F8F8;
+	text-align: center;
+}
+.money-content h1 {
+	padding: 25px 0;
+	color: #000000;
+	font-size: 22px;
+	font-weight: 500;
+}
+.money-content a {
+	background: #59A5FF;
+	padding: 15px 50px;
+	border-radius: 4px;
+	color: #FFFFFF;
+	font-size: 20px;
+    padding-top: 10px;
+	text-decoration: none;
+}
+
