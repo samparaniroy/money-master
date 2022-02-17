@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -26,13 +27,62 @@ body{
 	font-size: 22px;
 	font-weight: 500;
 }
-.money-content a {
+.money-content button {
 	background: #59A5FF;
-	padding: 15px 50px;
+	padding: 15px 80px;
 	border-radius: 4px;
 	color: #FFFFFF;
 	font-size: 20px;
     padding-top: 10px;
 	text-decoration: none;
+}
+#income-input {
+	background: #DCDCDC;
+	padding: 10px 10px;
+	border-radius: 5px;
+	margin-left: 15px;
+    border: 0;
+}
+#food-price-input {
+	background: #DCDCDC;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-left: 15px;
+    border: 0;
+}
+#rent-price-input {
+	background: #DCDCDC;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-left: 15px;
+    border: 0;
+}
+#clothes-price-input {
+	background: #DCDCDC;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin-left: 15px;
+    border: 0;
+}
+#save {
+	background: #DCDCDC;
+	padding: 10px 10px;
+    border-radius: 5px;
+    border: 0;
+}
+.money-content label {
+	width: 65px;
+}
+.save-content {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+.save-content input {
+	width: 132px;
+	margin: 0px 15px;
+}
+.save-content span {
+	margin-right: 15px;
 }
 
