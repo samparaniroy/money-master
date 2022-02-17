@@ -36,6 +36,10 @@ body{
     padding-top: 10px;
 	text-decoration: none;
 }
+input{
+    box-sizing: border-box;
+    width: 234px;
+}
 #income-input {
 	background: #DCDCDC;
 	padding: 10px 10px;
@@ -77,6 +81,7 @@ body{
 	display: flex;
 	align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .save-content input {
 	width: 132px;
@@ -85,4 +90,5 @@ body{
 .save-content span {
 	margin-right: 15px;
 }
+
 

@@ -20,7 +20,12 @@ function calculateButtonPrice(){
     // balance total
     balance = totalIncome - totalExpense;
     if(totalIncome < totalExpense){
-        alert('Expense Amount is more than income amount')
+        alert('Expense Amount is more than income amount');
+        const saveAmount = document.getElementById('save-amount');
+        saveAmount.innerText = '00';
+        const totalBalanceText = document.getElementById('total-balance');
+        totalBalanceText.innerText = '00';
+        
     }
     const totalBalance = document.getElementById('balance-total');
     totalBalance.innerText = balance;
@@ -32,12 +37,16 @@ function saveAmount(){
     const totalSaveInput = saveInput.value;
     const totalSave = (balance*totalSaveInput) / 100;
     const saveAmount = document.getElementById('save-amount');
-    saveAmount.innerText = totalSave;
-    if(balance < totalSave){
-        alert('You have not positive amount')
+    if(balance < 0){
+        alert('You have not positive amount');
+        saveAmount.innerText = '00';
+        totalBalance.innerText = '00';
     }
-    const totalBalance = document.getElementById('total-balance');
-    const totalBalanceAmount = balance-totalSave;
-    totalBalance.innerText = totalBalanceAmount;
+    else{
+        saveAmount.innerText = totalSave;
+        const totalBalance = document.getElementById('total-balance');
+        const totalBalanceAmount = balance-totalSave;
+        totalBalance.innerText = totalBalanceAmount;
+    }
 }
 

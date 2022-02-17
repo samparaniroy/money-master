@@ -1,0 +1,16 @@
+@media all and (max-width: 575px){
+    .money-content label {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    input{
+        width: 320px;
+        margin-left: 0 !important;
+    }
+    .money-content button {
+        margin-top: 15px;
+    }
+}

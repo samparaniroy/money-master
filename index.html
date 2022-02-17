@@ -9,6 +9,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <!----header area-->
@@ -36,20 +37,20 @@
                     <div class="money-content">
                         <h1>Income</h1>
                         <label for="name">Income:</label>
-                        <input type="text " placeholder="your salary" id="income-input" name="income"><br><br>
+                        <input type="text " placeholder="your salary" id="income-input" name="income" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" ><br><br>
                         <h1>Expenses</h1>
                         <label for="food">Food:</label>
-                        <input type="text" placeholder="food cost" id="food-price-input" name="food"><br><br>
+                        <input type="text" placeholder="food cost" id="food-price-input" name="food" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" ><br><br>
                         <label for="rent">Rent:</label>
-                        <input type="text" placeholder="rent cost" id="rent-price-input" name="rent"><br><br>
+                        <input type="text" placeholder="rent cost" id="rent-price-input" name="rent" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" ><br><br>
                         <label for="clothes">Clothes:</label>
-                        <input type="text"  placeholder="clothes cost" id="clothes-price-input" name="cloths"><br><br>
+                        <input type="text"  placeholder="clothes cost" id="clothes-price-input" name="cloths" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" ><br><br>
                         <button class=" " onclick="calculateButtonPrice()">Calculate</button>
                         <h1>Total Expenses:<span id="total-expense">00</span></h1>
                         <h1>Balance:<span id = balance-total>00</span></h1>
                         <div class="save-content">
                             <label for="save">Save:</label>
-                            <input type="text" id="save" name="save"><br><br>
+                            <input type="text" id="save" name="save" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" ><br><br>
                             <span>%</span>
                             <button  onclick="saveAmount()">Save</button>
                         </div>
